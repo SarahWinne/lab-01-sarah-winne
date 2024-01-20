@@ -226,6 +226,8 @@ This command must be ran in the Console.
 
 1.  Based on the help file, how many rows and how many columns does the `datasaurus_dozen` file have? What are the variables included in the data frame? Add your responses to your lab report.
 
+There are 1846 rows and 3 variables. The variable names are **dataset**, **x**, and **y**.
+
 Let's take a look at what these datasets are.
 To do so we can make a *frequency table* of the dataset variable:
 
