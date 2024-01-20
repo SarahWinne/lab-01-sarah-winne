@@ -249,6 +249,8 @@ In the paper, the authors simulate a variety of datasets that have the same summ
 
 2.  Plot `y` vs. `x` for the `dino` dataset. Then, calculate the correlation coefficient between `x` and `y` for this dataset.
 
+The correlation coefficient is -0.06447185
+
 Below is the code you will need to complete this exercise.
 Basically, the answer is already given, but you need to include relevant bits in your Rmd document and successfully knit it and view the results.
 
@@ -272,11 +274,11 @@ We will use the `ggplot` function for this.
 Its first argument is the data you're visualizing.
 Next we define the `aes`thetic mappings.
 In other words, the columns of the data that get mapped to certain aesthetic features of the plot, e.g. the `x` axis will represent the variable called `x` and the `y` axis will represent the variable called `y`.
-Then, we add another layer to this plot where we define which `geom`etric shapes we want to use to represent each observation in the data.
+Then, we add another layer to this plot where we define which 'geom'etric shapes we want to use to represent each observation in the data.
 In this case we want these to be points, hence `geom_point`.
 
 ```{r fig.fullwidth=TRUE}
-ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+ggplot(data = dino_data, mapping = aes(x = y, y = x)) +
   geom_point()
 ```
 
