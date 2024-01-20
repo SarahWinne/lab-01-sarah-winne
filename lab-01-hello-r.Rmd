@@ -231,7 +231,7 @@ There are 1846 rows and 3 variables. The variable names are **dataset**, **x**, 
 Let's take a look at what these datasets are.
 To do so we can make a *frequency table* of the dataset variable:
 
-```{r}
+```{r fig.height=3, fig.width=6}
 datasaurus_dozen %>%
   count(dataset) %>%
   print(13)
@@ -323,7 +323,7 @@ Facet by the dataset variable, placing the plots in a 3 column grid, and don't a
 
 5.  Finally, let's plot all datasets at once. In order to do this we will make use of faceting.
 
-```{r all-viz, eval=FALSE, fig.fullwidth=TRUE}
+```{r all-viz, eval=FALSE, fig.fullwidth=TRUE, fig.height=3, fig.width=7}
 ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
   geom_point()+
   facet_wrap(~ dataset, ncol = 3) +
